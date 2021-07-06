@@ -276,7 +276,7 @@ function showHighScores(){
     goback.textContent = "Go Back";
     btnDiv.appendChild(goback);
     
-    // Event listener for go back button opens index.html page
+    // Event listener for go back button opens indexin.html page
     goback.addEventListener("click",function(){
         window.location= "quiz1.html";
     });

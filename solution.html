@@ -1,20 +1,16 @@
 
-{% extends "layout.html" %}
+{% extends "index.html" %}
 {% block body %}
       <section>
         <textarea><pre>
             <code>
                
-                
-                    
                     int main() 
                     {
+                        char s[100];
+                        scanf("%[^\n]%*c", &s);
                         /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
-                        char ch;
-                        char s[24];
-                        char sen[100];
-                        scanf("%c\n%s\n%[^\n]s",&ch,s,sen);
-                        printf("%c\n%s\n%s",ch,s,sen);
+                        printf("Hello, World!\n%s",s);
                         return 0;
                     }
             </code>
@@ -24,13 +20,16 @@
                 tinymce.init({
                     selector: 'textarea',
                     height: 500,
-                    plugins: 'copy',
-                    toolbar: 'copy',
+                    plugins: '',
+                    toolbar: '',
                    
                     
                 });
             </script>
             
       </section>
+  
+
+
         
       {% endblock %}  
